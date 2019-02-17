@@ -1,0 +1,83 @@
+.deco2
+{
+    display: block;
+}
+
+li:first-of-type
+{
+    border: 0;
+}
+
+li:nth-child(2)
+{
+    border-bottom: 4px solid #f6bc5b;
+}
+
+body > div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 20vh;
+}
+
+body > div > p
+{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu > ul
+{
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 1120px)
+{
+    .menu > ul
+    {
+        display: none;
+    }
+
+    body > div
+    {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 792px)
+{
+    body > div > p
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 529px)
+{
+    body > div
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 311px)
+{
+    body > div > p
+    {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 270px)
+{
+    body > div
+    {
+        width: 95%;
+    }
+}

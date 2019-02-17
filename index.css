@@ -1,0 +1,372 @@
+button
+{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    margin-right: 0px;
+    padding: 10px;
+    z-index: 4;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:focus
+{
+    outline: 0;
+}
+
+.center
+{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    margin-top: 20vh;
+    z-index: 2;
+}
+
+.center div
+{
+    width: 50%;
+    z-index: 2;
+}
+
+.center div img
+{
+    width: 320px;
+    box-shadow: 0px 0px 60px 0px rgb(131,48,105,0.35);
+}
+
+#masque
+{
+    background-color: #f6bc5b;
+    width: 50px;
+    height: 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    transform: rotate(25deg);
+}
+
+#masque div
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPres
+{
+    width: 30%;
+    transition: top 0.5s linear;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+.secondPres
+{
+    width: 30%;
+    transition: top 1s linear;
+    text-align: right;
+    position: absolute;
+    top: 250px;
+    right: 0px;
+}
+
+.thirdPres
+{
+    width: 30%;
+    transition: top 1s linear;
+    text-align: left;
+    position: absolute;
+    top: 930px;
+    left: 0px;
+}
+
+.forthPres
+{
+    width: 30%;
+    transition: top 1s linear;
+    text-align: right;
+    position: absolute;
+    top: 660px;
+    right: 0px;
+}
+
+.fifthPres
+{
+    width: 30%;
+    transition: top 1s linear;
+    text-align: left;
+    position: absolute;
+    top: 1160px;
+    left: 0px;
+}
+
+.sixthPres
+{
+    width: 30%;
+    transition: top 1s linear;
+    text-align: right;
+    position: absolute;
+    top: 1460px;
+    margin-bottom: 70px;
+    right: 0px;
+}
+
+.title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.scroll
+{
+    margin-top: 70px;
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.appPresentation
+{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 60%;
+    height: 370px;
+    margin-top: 30px;
+    background-color: rgba(246, 188, 91, 0.3);
+    border-radius: 15px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+.appPresentation div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollImage
+{
+    width: 30px;
+    position: absolute;
+    top: 435px;
+}
+
+.iphone
+{
+    position: absolute;
+    display: none;
+    width: 200px;
+    top: 150px;
+    z-index: 3;
+}
+
+@media screen and (max-width: 940px)
+{
+    .iphone
+    {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 940px)
+{
+    .secondPres
+    {
+        top: 150px;
+    }
+
+    .iphone
+    {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 930px)
+{
+    .center
+    {
+        width: 100%;
+    }
+
+    .presText
+    {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 843px)
+{
+    .presText
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .appPresentation
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 678px)
+{
+    .secondPres
+    {
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 546px)
+{
+    button
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 470px)
+{
+    .iphone
+    {
+        top: 250px;
+        width: 100px;
+    }
+
+    .presText
+    {
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 460px)
+{
+    .center
+    {
+        flex-direction: column;
+    }
+
+    .center div
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center img
+    {
+        margin-top: 30px;
+    }
+
+    .intro p
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 440px)
+{
+    .presText
+    {
+        width: 80%;
+    }
+
+    .secondPres
+    {
+        top: 350px;
+    }
+
+    .iphone
+    {
+        top: 280px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .center
+    {
+        margin-top: 80px;
+    }
+
+    .center div img
+    {
+        width: 250px;
+    }
+
+    button
+    {
+        position: initial;
+        justify-self: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .appPresentation
+    {
+        height: 400px;
+    }
+
+    .scrollImage
+    {
+        top: 465px;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .center div img
+    {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 280px)
+{
+    .intro p
+    {
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 240px)
+{
+    .appPresentation
+    {
+        height: 420px;
+    }
+
+    .secondPres
+    {
+        top: 360px;
+    }
+
+    .scrollImage
+    {
+        top: 485px;
+    }
+
+    .iphone
+    {
+        top: 290px;
+    }
+}
